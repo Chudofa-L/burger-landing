@@ -11,6 +11,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .btn {
@@ -90,7 +91,6 @@ body {
 }
 
 .welcome__inner-text {
-  padding-left: 15px;
   width: 50%;
 }
 
@@ -112,10 +112,6 @@ body {
 
   font-size: 18px;
   opacity: 0.7;
-}
-
-.welcome .btn {
-  margin-left: 15px;
 }
 
 /* ------------food list----------- */
@@ -170,4 +166,64 @@ body {
 
   font-size: 16px;
   opacity: 0.7;
+}
+
+/* ------------order---------- */
+
+.order {
+  padding: 60px 0;
+
+  background-color: #312F30;
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.order__img {
+  max-width: 470px;
+}
+
+.order__text {
+  max-width: 360px;
+  padding-right: 75px;
+}
+
+.order__title {
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 44px;
+}
+
+.order__desc {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.order__price {
+  font-weight: 500;
+  font-size: 20px;
+  color: #f6762c;
+  letter-spacing: 0.1em;
+}
+
+.order__price--old {
+  font-size: 16px;
+
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.order__price+.order__price {
+  margin-left: 5px;
+}
+
+.order .btn {
+  margin-top: 10px;
 }
