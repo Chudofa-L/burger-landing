@@ -361,3 +361,21 @@ body {
 
   display: block;
 }
+
+/* ----------download-------- */
+
+.download {
+  padding: 62px;
+  background: #312f30;
+}
+
+.download .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.download__title {
+  font-weight: 500;
+  font-size: 40px;
+}
