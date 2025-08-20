@@ -330,7 +330,7 @@ body {
 
 .feedback__text {
   margin: 0;
-  width: 370px;
+  max-width: 370px;
 
   text-align: center;
 }
@@ -577,6 +577,10 @@ body {
     padding: 40px 15px 40px 290px;
   }
 
+  .product__card:nth-child(even) {
+    padding-left: 15px;
+  }
+
   .product__title {
     margin-bottom: 15px;
     font-size: 26px;
@@ -647,5 +651,169 @@ body {
 
   .footer__lins {
     justify-self: end;
+  }
+}
+
+/* ------phone------- */
+
+@media (max-width: 650px) {
+
+  .header .btn {
+    display: none;
+  }
+
+  .header__nav a {
+    font-size: 12px;
+  }
+
+  .welcome {
+    padding: 28% 0;
+  }
+
+  .welcome__inner-text {
+    width: 70%;
+    text-shadow: 3px 2px 4px black;
+  }
+
+  .feedback__img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .welcome {
+    padding: 35% 0;
+  }
+
+  .welcome__inner-text {
+    width: 100%;
+  }
+
+  .order__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  .feedback__desc {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .feedbak__author {
+    font-size: 22px;
+  }
+
+  .download {
+    padding: 15px;
+  }
+
+  .download .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__container {
+    padding: 15px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .welcome__title {
+    font-size: 45px;
+  }
+
+  .welcome {
+    padding: 42% 0;
+  }
+
+  .product {
+    padding: 50px 0;
+  }
+
+  .product__title {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .product__card {
+    padding: 40px 10px 40px 200px;
+  }
+
+  .product__card:nth-child(even) {
+    padding-right: 200px;
+    padding-left: 10px;
+  }
+
+  .feedback {
+    padding-bottom: 50px;
+  }
+
+  .feedback .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feedback__img {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .header__list {
+    gap: 10px;
+  }
+
+  .welcome {
+    padding: 50% 0;
+  }
+
+  .welcome p {
+    margin: 15px 0;
+  }
+
+  .product__title {
+    font-size: 20px;
+  }
+
+  .product__price+.product__price {
+    margin-left: 0;
+  }
+
+  .product__card {
+    padding: 40px 10px 40px 170px;
+  }
+
+  .product__card:nth-child(even) {
+    padding-right: 170px;
+  }
+
+  .download__title {
+    font-size: 25px;
+  }
+
+  .download .btn {
+    width: 130px;
+    height: 40px;
+
+    font-size: 14px;
+  }
+
+  .footer__info {
+    text-align: center;
+  }
+
+  .footer__lins {
+    text-align: right;
+  }
+
+  .footer .logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts {
+    align-self: flex-end;
   }
 }
